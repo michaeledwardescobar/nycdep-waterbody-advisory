@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import requests
 
-# DEP Waterbody Advisory logger, v2 — matched to the real API.
+# DEP Waterbody Advisory logger, v2 â€” matched to the real API.
 # The server publishes only (a) rain gauges and (b) the advisory model
 # config per waterbody. Advisories are computed client-side by the
 # dashboard, so we log the inputs and a provisional trigger status here;
@@ -16,6 +16,7 @@ BASE = "https://nycwaterbodyadvisory.azurewebsites.net/"
 ENDPOINTS = {
     "waterbodies": BASE + "api/waterbodies",
     "sensors": BASE + "api/sensors",
+    "advisory": BASE + "api/advisory",
 }
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -27,6 +28,8 @@ WB_COLS = ["poll_time_utc", "waterbody", "wbid", "sensor_id", "rain_24h_in",
            "wq_threshold_in", "wq_coeff_a", "wq_coeff_b",
            "cso_threshold_in", "provisional_on_advisory"]
 SN_COLS = ["poll_time_utc", "sensor_id", "sensor_name", "rain_24h_in", "active"]
+ADV_COLS = ["poll_time_utc", "advisory_type", "waterbody", "wb_api_id",
+            "wb_class", "rain_gauge", "occurred_on", "duration_hr", "volume"]
 
 
 def fetch_json(url):
@@ -70,7 +73,7 @@ def snapshot_model_config(waterbodies, t):
     latest.write_text(canon)
     (cfg_dir / f"config_{t:%Y%m%dT%H%M%SZ}.json").write_text(
         json.dumps(waterbodies, indent=1))
-    print("Model config changed (or first run) — snapshot saved.")
+    print("Model config changed (or first run) â€” snapshot saved.")
 
 
 def archive_site_js():
@@ -145,9 +148,40 @@ def main():
             "provisional_on_advisory": (wq_thr is not None and rain >= wq_thr),
         })
 
+    # DEP's own computed advisories (the authoritative record).
+    # Only waterbodies currently ON advisory appear in these responses;
+    # absence from the list means no advisory at this poll.
+    adv_rows = []
+    for adv_type in ("WQ", "CSO"):
+        try:
+            advisories = requests.get(
+                ENDPOINTS["advisory"], params={"advisoryType": adv_type},
+                headers=HDRS, timeout=30).json()
+        except (requests.RequestException, ValueError) as e:
+            print(f"[warn] advisory {adv_type} fetch failed: {e}")
+            continue
+        (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_advisory_{adv_type}.json").write_text(
+            json.dumps(advisories, indent=1))
+        for a in advisories:
+            wb = a.get("waterbody") or {}
+            adv_rows.append({
+                "poll_time_utc": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "advisory_type": adv_type,
+                "waterbody": wb.get("name"),
+                "wb_api_id": wb.get("id"),
+                "wb_class": wb.get("class"),
+                "rain_gauge": wb.get("rainGauge"),
+                "occurred_on": a.get("occurredOn"),
+                "duration_hr": a.get("duration"),
+                "volume": a.get("volume"),
+            })
+    if adv_rows:
+        append(DATA / f"advisory_log_{t:%Y-%m}.csv", ADV_COLS, adv_rows)
+
     append(DATA / f"waterbody_log_{t:%Y-%m}.csv", WB_COLS, wb_rows)
     append(DATA / f"sensor_log_{t:%Y-%m}.csv", SN_COLS, sn_rows)
-    print(f"Logged {len(wb_rows)} waterbodies, {len(sn_rows)} sensors.")
+    print(f"Logged {len(wb_rows)} waterbodies, {len(sn_rows)} sensors, "
+          f"{len(adv_rows)} active advisories.")
 
     snapshot_model_config(waterbodies, t)
     archive_site_js()
