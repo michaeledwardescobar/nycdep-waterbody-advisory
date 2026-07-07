@@ -15,7 +15,7 @@ BASE = "https://nycwaterbodyadvisory.azurewebsites.net/api"
 HDRS = {"User-Agent": "Mozilla/5.0 (personal research logger)",
         "Accept": "application/json, text/plain, */*"}
 PAGE_SIZE = 96          # the page size the dashboard itself uses
-MAX_PAGES = 3000        # hard stop ≈ 33 years/sensor; safety valve
+MAX_PAGES = 3000        # hard stop â‰ˆ 33 years/sensor; safety valve
 SLEEP = 0.15            # politeness delay between requests
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "rain_history"
@@ -31,6 +31,26 @@ def get(url, params, tries=3):
             print(f"  [retry {i+1}] {e}")
             time.sleep(2 * (i + 1))
     return None
+
+
+def rec_key(d):
+    """Stable unique key per hourly record, robust to whatever shape
+    the server gives the 'id' field (string, number, or nested object)."""
+    rid = d.get("id")
+    if isinstance(rid, (str, int)):
+        return str(rid)
+    return f"{d.get('sensorId')}-{d.get('occurredOn')}"
+
+
+def as_record_list(data):
+    """The API may return a bare list or wrap it in an envelope."""
+    if isinstance(data, list):
+        return [d for d in data if isinstance(d, dict)]
+    if isinstance(data, dict):
+        for k in ("items", "results", "data", "records", "values"):
+            if isinstance(data.get(k), list):
+                return [d for d in data[k] if isinstance(d, dict)]
+    return []
 
 
 def harvest_sensor(sensor_id):
@@ -49,12 +69,16 @@ def harvest_sensor(sensor_id):
         if data is None:
             print(f"[{sensor_id}] giving up on page {page} after retries")
             break
+        data = as_record_list(data)
         if not data:
             print(f"[{sensor_id}] end of history at page {page}")
             break
-        fresh = [d for d in data if d.get("id") not in seen]
+        if page == 0:
+            print(f"[{sensor_id}] sample record: "
+                  f"{json.dumps(data[0])[:300]}")
+        fresh = [d for d in data if rec_key(d) not in seen]
         for d in fresh:
-            seen.add(d["id"])
+            seen.add(rec_key(d))
         new_rows.extend(fresh)
         if not fresh:
             print(f"[{sensor_id}] page {page} all duplicates; "
@@ -75,8 +99,8 @@ def harvest_sensor(sensor_id):
             for row in csv.DictReader(f):
                 merged[row["id"]] = row
     for d in new_rows:
-        merged[d["id"]] = {
-            "id": d.get("id"),
+        merged[rec_key(d)] = {
+            "id": rec_key(d),
             "sensor_id": d.get("sensorId"),
             "occurred_on": d.get("occurredOn"),
             "precip_in": d.get("precipitation"),
