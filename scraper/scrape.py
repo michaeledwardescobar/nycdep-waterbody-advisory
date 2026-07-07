@@ -1,97 +1,157 @@
-import csv, json, sys
+import csv
+import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
 
+# DEP Waterbody Advisory logger, v2 — matched to the real API.
+# The server publishes only (a) rain gauges and (b) the advisory model
+# config per waterbody. Advisories are computed client-side by the
+# dashboard, so we log the inputs and a provisional trigger status here;
+# exact duration math is reproduced in analysis once decoded from the
+# site's JavaScript (archived below into site_js/).
+
+BASE = "https://nycwaterbodyadvisory.azurewebsites.net/"
+ENDPOINTS = {
+    "waterbodies": BASE + "api/waterbodies",
+    "sensors": BASE + "api/sensors",
+}
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 DATA = ROOT / "data"
 HDRS = {"User-Agent": "Mozilla/5.0 (personal research logger)",
         "Accept": "application/json, text/plain, */*"}
-COLS = ["poll_time_utc", "waterbody", "on_advisory",
-        "advisory_until", "advisory_hours_left", "sensor_id",
-        "rain_24h_in", "source_endpoint"]
 
-def get_first(d, *names):
-    low = {k.lower(): v for k, v in d.items()} if isinstance(d, dict) else {}
-    for n in names:
-        cur, ok = low, True
-        for p in n.lower().split("."):
-            if isinstance(cur, dict):
-                cur = {k.lower(): v for k, v in cur.items()}
-            if not isinstance(cur, dict) or p not in cur:
-                ok = False
-                break
-            cur = cur[p]
-        if ok and cur is not None:
-            return cur
-    return None
+WB_COLS = ["poll_time_utc", "waterbody", "wbid", "sensor_id", "rain_24h_in",
+           "wq_threshold_in", "wq_coeff_a", "wq_coeff_b",
+           "cso_threshold_in", "provisional_on_advisory"]
+SN_COLS = ["poll_time_utc", "sensor_id", "sensor_name", "rain_24h_in", "active"]
 
-def walk(node):
-    if isinstance(node, dict):
-        keys = {k.lower() for k in node}
-        if "name" in keys and (keys & {"advisory", "sensor",
-                "onadvisory", "advisoryuntil", "hours", "status"}):
-            yield node
-        for v in node.values():
-            yield from walk(v)
-    elif isinstance(node, list):
-        for x in node:
-            yield from walk(x)
 
-def main():
-    t = datetime.now(timezone.utc)
-    eps_file = HERE / "endpoints.json"
-    if not eps_file.exists():
-        sys.exit("endpoints.json missing - run discover.py")
-    eps = json.loads(eps_file.read_text())["endpoints"]
-    rows = []
-    raw_dir = DATA / "raw" / f"{t:%Y-%m}"
-    raw_dir.mkdir(parents=True, exist_ok=True)
-    for i, ep in enumerate(eps):
-        try:
-            r = requests.get(ep, headers=HDRS, timeout=30)
-            r.raise_for_status()
-            payload = r.json()
-        except (requests.RequestException, ValueError) as e:
-            print(f"[warn] {ep}: {e}")
-            continue
-        (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_{i}.json").write_text(
-            json.dumps(payload, indent=1))
-        for wb in walk(payload):
-            sensor = get_first(wb, "sensor") or {}
-            until = get_first(wb, "advisory.until", "advisoryUntil",
-                              "until")
-            hours = get_first(wb, "advisory.hours", "advisoryHours",
-                              "hours")
-            on = get_first(wb, "onAdvisory", "advisory.active",
-                           "isOnAdvisory")
-            if on is None:
-                on = bool(until) or (isinstance(hours, (int, float))
-                                     and hours > 0)
-            rows.append({
-                "poll_time_utc": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "waterbody": str(get_first(wb, "name") or "").strip().upper(),
-                "on_advisory": bool(on),
-                "advisory_until": until or "",
-                "advisory_hours_left": hours if hours is not None else "",
-                "sensor_id": get_first(wb, "sensor.id", "sensorId")
-                    or (sensor.get("id") if isinstance(sensor, dict) else ""),
-                "rain_24h_in": get_first(wb, "sensor.accumulated",
-                    "accumulated", "rainfall", "rain24") or "",
-                "source_endpoint": ep,
-            })
-    if not rows:
-        print("No rows this run (raw JSON archived if any).")
-        return
-    out = DATA / f"advisory_log_{t:%Y-%m}.csv"
-    new = not out.exists()
-    with out.open("a", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=COLS)
+def fetch_json(url):
+    r = requests.get(url, headers=HDRS, timeout=30)
+    r.raise_for_status()
+    return r.json()
+
+
+def advisory_type(wb, short):
+    for at in wb.get("advisoryTypes") or []:
+        if at.get("shortName") == short:
+            return at
+    return {}
+
+
+def append(path, cols, rows):
+    new = not path.exists()
+    with path.open("a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=cols)
         if new:
             w.writeheader()
         w.writerows(rows)
-    print(f"Appended {len(rows)} rows to {out.name}")
+
+
+def snapshot_model_config(waterbodies, t):
+    """Keep one copy of the model rulebook; save a new dated copy only
+    when DEP changes it (ignoring volatile fields like createdOn)."""
+    def strip(o):
+        if isinstance(o, dict):
+            return {k: strip(v) for k, v in sorted(o.items())
+                    if k not in ("createdOn", "$type", "activeSensor")}
+        if isinstance(o, list):
+            return [strip(x) for x in o]
+        return o
+    canon = json.dumps(strip(waterbodies), sort_keys=True)
+    cfg_dir = DATA / "model_config"
+    cfg_dir.mkdir(parents=True, exist_ok=True)
+    latest = cfg_dir / "latest.json"
+    if latest.exists() and latest.read_text() == canon:
+        return
+    latest.write_text(canon)
+    (cfg_dir / f"config_{t:%Y%m%dT%H%M%SZ}.json").write_text(
+        json.dumps(waterbodies, indent=1))
+    print("Model config changed (or first run) — snapshot saved.")
+
+
+def archive_site_js():
+    """One-time: save the dashboard's JS bundles into the repo so the
+    exact advisory-duration formula can be decoded from them."""
+    import re
+    from urllib.parse import urljoin
+    out = ROOT / "site_js"
+    if out.exists() and any(out.iterdir()):
+        return
+    out.mkdir(exist_ok=True)
+    try:
+        html = requests.get(BASE, headers=HDRS, timeout=30).text
+        for src in re.findall(r'<script[^>]+src=["\']([^"\']+)["\']', html, re.I):
+            url = urljoin(BASE, src)
+            name = src.strip("/").replace("/", "__") or "inline.js"
+            try:
+                js = requests.get(url, headers=HDRS, timeout=30).text
+                (out / name).write_text(js)
+                print(f"Archived JS: {name} ({len(js)} chars)")
+            except requests.RequestException as e:
+                print(f"[warn] JS fetch {url}: {e}")
+    except requests.RequestException as e:
+        print(f"[warn] could not archive site JS: {e}")
+
+
+def main():
+    t = datetime.now(timezone.utc)
+    raw_dir = DATA / "raw" / f"{t:%Y-%m}"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        waterbodies = fetch_json(ENDPOINTS["waterbodies"])
+        sensors = fetch_json(ENDPOINTS["sensors"])
+    except (requests.RequestException, ValueError) as e:
+        sys.exit(f"API fetch failed: {e}")
+
+    (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_waterbodies.json").write_text(
+        json.dumps(waterbodies, indent=1))
+    (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_sensors.json").write_text(
+        json.dumps(sensors, indent=1))
+
+    sn_rows = [{
+        "poll_time_utc": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "sensor_id": s.get("id"),
+        "sensor_name": s.get("name"),
+        "rain_24h_in": round(float(s.get("accumulatedLast24Hours") or 0), 4),
+        "active": s.get("active"),
+    } for s in sensors]
+
+    wb_rows = []
+    for wb in waterbodies:
+        wq = advisory_type(wb, "WQ")
+        cso = advisory_type(wb, "CSO")
+        sensor = wb.get("activeSensor") or {}
+        rain = round(float(sensor.get("accumulatedLast24Hours") or 0), 4)
+        wq_thr = wq.get("rainfallThreshold")
+        coeffs = wq.get("coefficients") or [None, None]
+        wb_rows.append({
+            "poll_time_utc": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "waterbody": wb.get("name"),
+            "wbid": wb.get("wbid"),
+            "sensor_id": sensor.get("id"),
+            "rain_24h_in": rain,
+            "wq_threshold_in": wq_thr,
+            "wq_coeff_a": coeffs[0] if len(coeffs) > 0 else None,
+            "wq_coeff_b": coeffs[1] if len(coeffs) > 1 else None,
+            "cso_threshold_in": cso.get("rainfallThreshold"),
+            # Provisional: 24-h rain at the gauge meets/exceeds the WQ
+            # trigger. The exact DEP logic uses storm-event depth with a
+            # 6-h gap; this proxy is refined in analysis.
+            "provisional_on_advisory": (wq_thr is not None and rain >= wq_thr),
+        })
+
+    append(DATA / f"waterbody_log_{t:%Y-%m}.csv", WB_COLS, wb_rows)
+    append(DATA / f"sensor_log_{t:%Y-%m}.csv", SN_COLS, sn_rows)
+    print(f"Logged {len(wb_rows)} waterbodies, {len(sn_rows)} sensors.")
+
+    snapshot_model_config(waterbodies, t)
+    archive_site_js()
+
 
 if __name__ == "__main__":
     main()
