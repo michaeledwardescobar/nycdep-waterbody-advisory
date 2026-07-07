@@ -1,0 +1,7 @@
+{
+  "endpoints": [
+    "https://nycwaterbodyadvisory.azurewebsites.net/api/WaterBodies",
+    "https://nycwaterbodyadvisory.azurewebsites.net/api/sensors",
+    "https://nycwaterbodyadvisory.azurewebsites.net/api/waterbodies"
+  ]
+}

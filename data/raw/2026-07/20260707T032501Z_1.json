@@ -1,0 +1,100 @@
+[
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "26",
+  "name": "26th Ward Plant",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "BB",
+  "name": "Bowery Bay",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "CI",
+  "name": "Coney Island",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "HP",
+  "name": "Hunts Point",
+  "accumulatedLast24Hours": 0.009999990463256836,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "JA",
+  "name": "Jamaica",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "NC",
+  "name": "Newtown Creek",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "NR",
+  "name": "North River",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "OB",
+  "name": "Oakwood Beach",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "OH",
+  "name": "Owls Head",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "PR",
+  "name": "Port Richmond",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "RH",
+  "name": "Red Hook",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "RK",
+  "name": "Rockaway",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "TI",
+  "name": "Tallman Island",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ },
+ {
+  "$type": "<>f__AnonymousType9`4[[System.String, mscorlib],[System.String, mscorlib],[System.Double, mscorlib],[System.Boolean, mscorlib]], dep.wba.api",
+  "id": "WI",
+  "name": "Wards Island",
+  "accumulatedLast24Hours": 0.0,
+  "active": true
+ }
+]
