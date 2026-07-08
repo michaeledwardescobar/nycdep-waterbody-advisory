@@ -1,0 +1,57 @@
+name: Refresh analysis
+
+on:
+  schedule:
+    - cron: "13 6 * * 1"    # Mondays, 6:13 AM UTC (odd minutes dodge load-shedding)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pandas numpy
+
+      - name: Configure git
+        run: |
+          git config user.name "advisory-logger-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Top up rainfall history
+        run: python scraper/harvest.py
+
+      - name: Rebuild analysis outputs
+        run: python analysis/reconstruct_all.py
+
+      - name: Sweep retired files
+        run: |
+          git rm -r -q --ignore-unmatch site_js data/raw || true
+
+      - name: Commit
+        run: |
+          git add -A data/ analysis/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git commit -m "refresh: analysis $(date -u +%Y-%m-%d)"
+          if ! git pull --rebase origin "${GITHUB_REF_NAME}"; then
+            git rebase --abort
+            echo "Repo changed mid-run; next refresh will catch up."
+            exit 0
+          fi
+          git push
