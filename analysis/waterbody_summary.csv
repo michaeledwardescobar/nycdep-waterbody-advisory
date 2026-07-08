@@ -1,0 +1,46 @@
+waterbody,gauge,threshold_in,episodes_per_yr,adv_hours_per_yr,pct_time,median_dur_hr
+Coney Island Creek,CI,0.05,42.3,3434,39.2,71
+"Hutchinson River, Lower",HP,0.05,50.4,3050,34.8,51
+"Bronx River, Lower",HP,0.05,51.0,3012,34.4,53
+Flushing Creek,TI,0.05,48.2,2907,33.2,48
+"Newtown Creek, Upper",NC,0.23,40.4,2572,29.3,54
+"Fresh Kills, Upper",PR,0.15,48.3,2100,24.0,35
+Alley Creek,TI,0.05,55.1,2108,24.0,32
+Bergen Basin,JA,0.05,55.7,1920,21.9,29
+Fresh Creek,26,0.05,57.6,1860,21.2,27
+Thurston Basin,JA,0.05,57.2,1823,20.8,25
+Flushing Bay,BB,0.19,45.5,1808,20.6,34
+"Newtown Creek, Lower",NC,0.3,38.9,1720,19.6,37
+"Arthur Kill, Upper",OB,0.1,58.1,1553,17.7,21
+Gravesend Bay,OH,0.1,54.5,1463,16.7,22
+Westchester Creek,HP,0.19,49.7,1455,16.6,22
+"Gowanus Canal, Outer",RH,0.46,30.4,1439,16.4,40
+Hendrix Creek,26,0.09,57.8,1425,16.3,20
+"Fresh Kills, Lower",PR,0.16,52.2,1359,15.5,19
+"Gowanus Canal, Inner",RH,0.23,46.2,1172,13.4,20
+Erie Basin,RH,0.27,44.1,1102,12.6,20
+Harlem River,WI,0.5,29.5,980,11.2,30
+Sheepshead Bay,CI,0.18,47.4,951,10.9,16
+Bowery Bay,BB,0.29,41.2,936,10.7,18
+Newark Bay,PR,0.39,33.7,896,10.2,20
+East River (near Steinway Creek),BB,0.54,25.8,840,9.6,30
+Shellbank Basin,JA,0.34,36.2,825,9.4,19
+Upper New York Bay,OH,0.34,35.0,812,9.3,19
+Kill Van Kull,PR,0.44,30.9,809,9.2,21
+Paerdegat Basin,CI,0.38,32.0,762,8.7,20
+Hudson River (Manhattan),NR,0.41,33.5,744,8.5,18
+Gerritsen Creek,RK,0.4,30.9,716,8.2,18
+Little Neck Bay,TI,0.46,30.7,698,8.0,19
+Spring Creek,26,0.64,22.3,681,7.8,28
+"East River, Lower",NC,0.8,21.8,581,6.6,24
+East River (RFK to Whitestone),TI,0.61,24.3,557,6.4,20
+"Arthur Kill, Lower",OB,0.7,20.1,516,5.9,22
+Hudson River (Bronx),WI,0.62,25.3,502,5.7,18
+Jamaica Bay (Queens),JA,0.74,18.0,394,4.5,20
+Powell Cove,TI,0.9,15.2,363,4.1,22
+East River (near Throgs Neck),TI,1.0,12.3,312,3.6,24
+Lower New York Bay,OB,1.3,6.9,184,2.1,25
+Eastchester Bay,HP,1.53,5.8,145,1.7,21
+Jamaica Bay (Brooklyn),26,1.46,4.9,138,1.6,26
+Mill Basin,CI,1.34,4.8,143,1.6,23
+Western Long Island Sound,HP,2.0,2.5,54,0.6,15
