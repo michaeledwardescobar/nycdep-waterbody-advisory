@@ -102,19 +102,11 @@ def archive_site_js():
 
 def main():
     t = datetime.now(timezone.utc)
-    raw_dir = DATA / "raw" / f"{t:%Y-%m}"
-    raw_dir.mkdir(parents=True, exist_ok=True)
-
     try:
         waterbodies = fetch_json(ENDPOINTS["waterbodies"])
         sensors = fetch_json(ENDPOINTS["sensors"])
     except (requests.RequestException, ValueError) as e:
         sys.exit(f"API fetch failed: {e}")
-
-    (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_waterbodies.json").write_text(
-        json.dumps(waterbodies, indent=1))
-    (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_sensors.json").write_text(
-        json.dumps(sensors, indent=1))
 
     sn_rows = [{
         "poll_time_utc": t.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -160,8 +152,6 @@ def main():
         except (requests.RequestException, ValueError) as e:
             print(f"[warn] advisory {adv_type} fetch failed: {e}")
             continue
-        (raw_dir / f"{t:%Y%m%dT%H%M%SZ}_advisory_{adv_type}.json").write_text(
-            json.dumps(advisories, indent=1))
         for a in advisories:
             wb = a.get("waterbody") or {}
             adv_rows.append({
