@@ -4,7 +4,7 @@ An open, continuously updated record of New York City's waterbody advisories, wh
 
 ## Why this exists
 
-Under the Sewage Pollution Right to Know Act, NYC DEP must tell the public when rainfall pushes sewage into local waterways. In practice, that notice takes two forms: automated alert emails, and a [dashboard](https://nycwaterbodyadvisory.azurewebsites.net/) that shows the current advisories. However, there is no public history, meaning there's no easy way to ask how often a creek is under advisory, how long advisories last, whether things are getting better or worse, or how one waterbody compares to another.
+Under the Sewage Pollution Right to Know Act, NYC DEP must tell the public when rainfall pushes sewage into local waterways. In practice, that notice takes two forms: automated alert emails, and a [dashboard](https://nycwaterbodyadvisory.azurewebsites.net/) that shows the current advisories. However, there is no public history, meaning there's no easy way to understand how often a creek is under advisory, how long advisories last, whether things are getting better or worse, or how one waterbody compares to another.
 
 Those questions are answerable. DEP's advisory system is a model: rain falls on a gauge, the gauge reading crosses a waterbody-specific threshold, and a formula computes how long the advisory lasts. This repository recovers all the ingredients of that model from DEP's own public data feeds and uses them to reconstruct the advisory history. This also keeps the record growing automatically.
 
