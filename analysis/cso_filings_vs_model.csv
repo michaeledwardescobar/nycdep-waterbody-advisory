@@ -1,0 +1,524 @@
+start_dt,matched,dist,reason,duration,duration_hours,wb_active_at_filing
+2021-01-01 00:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-01-02 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-01-03 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-01-16 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-01-17 00:00:00,False,1 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,20.0
+2021-02-02 00:00:00,False,1 days 04:00:00,Weather Conditions - Rain conditions,46 Hours - Ongoing,46.0,27.0
+2021-02-06 00:00:00,True,0 days 21:00:00,Weather Conditions - Snow condition,2 Hours - Ongoing,2.0,
+2021-02-07 00:00:00,True,0 days 10:00:00,Weather Conditions - Snow condition,2 Hours - Ongoing,2.0,
+2021-02-16 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain conditions,49 Hours - Ongoing,49.0,
+2021-02-23 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain conditions,43 Hours - Ongoing,43.0,
+2021-02-27 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2hrs Hours - Ongoing,2.0,
+2021-02-28 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain conditions,2hrs Hours - Ongoing,2.0,
+2021-03-01 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,36 Hours - Ongoing,36.0,
+2021-03-18 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain conditions,23 Hours - Ongoing,23.0,
+2021-03-19 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain conditions,46 Hours - Ongoing,46.0,
+2021-03-25 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain conditions,63 Hours - Ongoing,63.0,
+2021-03-28 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-03-29 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain conditions,37 Hours - Ongoing,37.0,
+2021-04-01 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain conditions,35 Hours - Ongoing,35.0,
+2021-04-10 00:00:00,False,1 days 08:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,0.0
+2021-04-11 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain conditions,2 hours Hours - Ongoing,2.0,
+2021-04-12 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain conditions,38 Hours - Ongoing,38.0,
+2021-04-13 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain conditions,40 Hours - Ongoing,40.0,
+2021-04-16 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain conditions,50 Hours - Ongoing,50.0,
+2021-04-17 00:00:00,False,1 days 13:00:00,Weather Conditions - Rain conditions,2 hours Hours - Ongoing,2.0,8.0
+2021-04-22 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain conditions,13 Hours - Ongoing,13.0,
+2021-05-05 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain conditions,20 Hours - Ongoing,20.0,
+2021-05-05 03:07:00,True,0 days 01:53:00,Weather Conditions,20,20.0,
+2021-05-06 00:00:00,True,0 days 19:00:00,Weather Conditions - Rain conditions,23 Hours - Ongoing,23.0,
+2021-05-06 03:07:00,True,0 days 22:07:00,Weather Conditions,23,23.0,
+2021-05-10 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain conditions,37 Hours - Ongoing,37.0,
+2021-05-10 03:08:00,True,0 days 11:08:00,Weather Conditions,37,37.0,
+2021-05-27 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain conditions,23 Hours - Ongoing,23.0,
+2021-05-27 03:07:00,True,0 days 07:07:00,Weather Conditions,23,23.0,
+2021-05-29 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain coniditon,2 Hours - Ongoing,2.0,
+2021-05-29 09:00:00,True,0 days 17:00:00,Weather Conditions,2,2.0,
+2021-05-30 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-05-30 03:00:00,True,0 days 03:00:00,Weather Conditions,2,2.0,
+2021-05-31 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-05-31 03:00:00,True,0 days 21:00:00,Weather Conditions,2,2.0,
+2021-06-03 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain conditions,26 Hours - Ongoing,26.0,
+2021-06-04 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain conditions,22 Hours - Ongoing,22.0,
+2021-06-05 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain conditions,2 hours Hours - Ongoing,2.0,
+2021-06-09 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain conditions,32 Hours - Ongoing,32.0,
+2021-06-15 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain conditions,16 Hours - Ongoing,16.0,
+2021-06-19 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-06-23 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-07-03 00:00:00,True,0 days 12:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,
+2021-07-04 00:00:00,False,1 days 12:00:00,Weather Conditions - Rain condition,2hours Hours - Ongoing,2.0,8.0
+2021-07-07 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-07-08 00:00:00,True,0 days 16:00:00,Weather Conditions - Rain Condition,3 Hours - Ongoing,3.0,
+2021-07-09 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain conditions,76 Hours - Ongoing,76.0,
+2021-07-10 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-07-11 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-07-12 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-07-18 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2021-07-22 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,
+2021-07-25 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2021-07-26 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,
+2021-07-28 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-07-30 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain conditions,21 Hours - Ongoing,21.0,
+2021-08-08 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2hours Hours - Ongoing,2.0,
+2021-08-09 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,
+2021-08-10 00:00:00,True,0 days 19:00:00,Weather Conditions - Rain conditions,7 Hours - Ongoing,7.0,
+2021-08-11 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain Conditions.,2 Hours - Ongoing,2.0,
+2021-08-12 00:00:00,True,0 days 03:00:00,Weather Conditions - Rainfall Conditions.,2 Hours - Ongoing,2.0,
+2021-08-19 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-08-20 00:00:00,True,0 days 22:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-08-22 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2021-08-23 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-08-24 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain conditions,200 Hours - Ongoing,200.0,
+2021-08-28 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain,2 Hours - Ongoing,2.0,
+2021-08-29 00:00:00,False,1 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,10.0
+2021-09-01 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-09-02 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2021-09-06 00:00:00,False,3 days 02:00:00,Weather Conditions - Rain condition,2 Hrs Hours - Ongoing,2.0,11.0
+2021-09-09 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2021-09-14 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2021-09-24 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2021-10-10 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2hrs Hours - Ongoing,2.0,
+2021-10-11 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-10-17 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-10-26 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-10-27 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2021-10-30 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2021-10-31 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2021-11-13 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2021-11-14 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2021-12-07 00:00:00,True,0 days 22:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-02-04 00:00:00,True,0 days 21:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2022-02-05 00:00:00,False,1 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,27.0
+2022-02-07 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-02-19 00:00:00,False,1 days 02:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,9.0
+2022-02-23 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-02-25 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-02-26 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2022-02-27 00:00:00,False,1 days 23:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,4.0
+2022-03-08 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-03-13 00:00:00,True,0 days 19:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-03-20 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-03-24 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-03-25 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions.,2 Hours - Ongoing,2.0,
+2022-03-26 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-03-27 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2022-04-01 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-04-02 00:00:00,False,1 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,8.0
+2022-04-05 00:00:00,True,0 days 22:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-04-06 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions.,2 Hours - Ongoing,2.0,
+2022-04-08 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-04-09 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-04-10 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 hours Hours - Ongoing,2.0,
+2022-04-15 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-04-17 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-04-19 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-04-20 00:00:00,False,1 days 04:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,24.0
+2022-04-24 00:00:00,True,0 days 09:00:00,Weather Conditions - Disregard.....getting False reading on Rain Gauge,0 Hours Hours - Ended,0.0,
+2022-04-24 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2022-05-04 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-05-06 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-05-07 00:00:00,True,0 days 16:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2022-05-08 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,40.0
+2022-05-15 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-05-17 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-05-19 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions.,2 Hours - Ongoing,2.0,
+2022-05-21 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2022-05-22 00:00:00,False,1 days 07:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,4.0
+2022-05-28 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-05-29 00:00:00,False,1 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,5.0
+2022-06-02 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2022-06-09 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-06-12 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-06-16 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-06-17 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-06-22 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-06-28 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-07-09 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-07-17 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-07-20 00:00:00,False,1 days 14:00:00,Weather Conditions - Rain Condition.,2 Hours - Ended,2.0,3.0
+2022-07-23 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,4.0
+2022-07-26 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-07-28 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-07-30 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 hour Hours - Ongoing,2.0,
+2022-08-01 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2022-08-10 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2022-08-11 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-08-12 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-08-18 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-08-22 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-08-23 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-08-27 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-08-31 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-09-05 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2022-09-06 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-09-07 00:00:00,False,1 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,37.0
+2022-09-08 00:00:00,False,2 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,13.0
+2022-09-12 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-09-20 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-09-22 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-09-26 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2022-10-01 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-10-02 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-10-04 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-10-15 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,15.0
+2022-10-17 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-10-18 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-10-24 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-10-25 00:00:00,True,0 days 22:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-11-01 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-11-12 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2022-11-13 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2022-11-16 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2022-11-30 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain Condition,0 Hours - Ongoing,0.0,
+2022-12-01 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-12-03 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2022-12-04 00:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2022-12-17 00:00:00,False,1 days 11:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,40.0
+2022-12-23 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2022-12-24 00:00:00,False,1 days 13:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,26.0
+2023-01-01 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-01-02 00:00:00,False,1 days 06:00:00,Weather Conditions - Rain condition,2 hour Hours - Ongoing,2.0,6.0
+2023-01-03 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-04 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-05 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-06 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-07 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-01-12 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-13 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-01-14 00:00:00,False,1 days 06:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,7.0
+2023-01-24 00:00:00,False,1 days 07:00:00,Weather Conditions - Rain Condition,2 Hours - Ended,2.0,27.0
+2023-01-25 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-01-26 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-01-31 00:00:00,False,4 days 21:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,0.0
+2023-02-18 00:00:00,True,0 days 16:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,
+2023-02-21 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-02-22 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-02-23 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-02-24 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,3.0
+2023-02-28 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2023-02-28 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-03-02 00:00:00,False,1 days 21:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,5.0
+2023-03-04 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-03-05 00:00:00,False,1 days 03:00:00,Weather Conditions - Rain conditions,2 Hours - Ended,2.0,18.0
+2023-03-06 00:00:00,False,2 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,6.0
+2023-03-07 00:00:00,False,3 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,2.0
+2023-03-11 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-03-12 00:00:00,False,1 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,16.0
+2023-03-13 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-03-14 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-03-26 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours Hours - Ongoing,2.0,
+2023-03-28 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain conditions.,2 Hours - Ongoing,2.0,
+2023-03-29 00:00:00,False,1 days 06:00:00,Weather Conditions - rain condition,2 Hours - Ongoing,2.0,3.0
+2023-04-01 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2023-04-02 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2023-04-03 00:00:00,False,1 days 17:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,4.0
+2023-04-23 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2023-04-29 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain conidition,2 Hours - Ended,2.0,
+2023-04-29 09:00:00,True,0 days 13:00:00,Rain conidition,2,2.0,
+2023-04-30 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2023-04-30 09:00:00,True,0 days 00:00:00,Rain conditions,2,2.0,
+2023-05-01 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,
+2023-05-01 03:00:00,True,0 days 18:00:00,Rain condition.,2,2.0,
+2023-05-20 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-05-20 09:00:00,True,0 days 05:00:00,Rain condition,2 hours,2.0,
+2023-05-21 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2023-05-21 03:00:00,True,0 days 23:00:00,Rain condition,2 hrs,2.0,
+2023-06-03 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-06-03 03:00:00,True,0 days 07:00:00,Rain Condition,2,2.0,
+2023-06-13 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,
+2023-06-13 03:00:00,True,0 days 07:00:00,Rain condition,2,2.0,
+2023-06-17 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-06-17 03:00:00,True,0 days 13:00:00,Rain condition,2 hours,2.0,
+2023-06-23 00:00:00,False,3 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,0.0
+2023-06-23 09:00:00,False,3 days 01:00:00,Rain condition,2,2.0,0.0
+2023-06-26 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-06-26 09:00:00,True,0 days 01:00:00,Rain condition,2,2.0,
+2023-06-27 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-06-27 03:00:00,True,0 days 17:00:00,Rain condition,2,2.0,
+2023-07-03 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,
+2023-07-03 03:00:00,True,0 days 10:00:00,Rain condition,2,2.0,
+2023-07-04 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-07-04 03:00:00,True,0 days 06:00:00,Rain Condition,2,2.0,
+2023-07-09 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,24 Hours - Ongoing,24.0,
+2023-07-14 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-07-15 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2023-07-16 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-07-19 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-07-21 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-07-22 00:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-07-26 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-07-28 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-07-29 00:00:00,True,0 days 00:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-07-30 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-08-07 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-11 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-08-12 00:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2023-08-13 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-14 00:00:00,False,1 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,7.0
+2023-08-15 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-16 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-18 00:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-08-19 00:00:00,True,0 days 20:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2023-08-25 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-26 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-08-27 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-28 00:00:00,False,1 days 17:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,4.0
+2023-08-30 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-08-31 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-08 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-10 00:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,
+2023-09-11 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-13 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-14 00:00:00,True,0 days 19:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-18 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-19 00:00:00,False,1 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,38.0
+2023-09-20 00:00:00,False,2 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,13.0
+2023-09-21 00:00:00,False,2 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,5.0
+2023-09-23 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-09-24 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-09-25 00:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,4 Hours - Ongoing,4.0,
+2023-09-26 00:00:00,False,1 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,43.0
+2023-09-27 00:00:00,False,1 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,28.0
+2023-09-28 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-29 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-09-30 00:00:00,False,1 days 07:00:00,Weather Conditions - Rain condition,2hrs Hours - Ongoing,2.0,44.0
+2023-10-01 00:00:00,False,2 days 07:00:00,Weather Conditions - Rain condition,2hrs Hours - Ongoing,2.0,39.0
+2023-10-02 00:00:00,False,3 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,30.0
+2023-10-03 00:00:00,False,3 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,21.0
+2023-10-04 00:00:00,False,2 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,16.0
+2023-10-05 00:00:00,False,1 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,10.0
+2023-10-06 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-07 00:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,
+2023-10-08 00:00:00,False,1 days 09:00:00,Weather Conditions - Rain condition,2 hours Hours - Ongoing,2.0,21.0
+2023-10-10 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-14 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-15 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-16 00:00:00,False,1 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,11.0
+2023-10-17 00:00:00,False,2 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,3.0
+2023-10-20 00:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-21 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2023-10-22 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-10-23 00:00:00,False,1 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,5.0
+2023-10-24 00:00:00,False,2 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,3.0
+2023-10-30 00:00:00,True,0 days 19:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-10-31 00:00:00,False,1 days 19:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,19.0
+2023-11-01 00:00:00,False,2 days 19:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,5.0
+2023-11-06 00:00:00,False,7 days 19:00:00,Pipe Break - Force main break,Ongoing Hours - Ongoing,,0.0
+2023-11-22 00:00:00,True,0 days 10:00:00,Weather Conditions - Wet Weather - Rain Condition,3 Hours - Ongoing,3.0,
+2023-11-23 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-11-27 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-11-28 00:00:00,False,1 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,4.0
+2023-12-02 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-12-03 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2023-12-04 00:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-12-05 00:00:00,False,1 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,7.0
+2023-12-11 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-12-12 00:00:00,False,1 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,31.0
+2023-12-18 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-12-28 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2023-12-29 00:00:00,False,1 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,28.0
+2023-12-30 00:00:00,False,2 days 14:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,11.0
+2024-01-07 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-08 00:00:00,False,1 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,18.0
+2024-01-10 00:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-13 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-14 00:00:00,False,1 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,18.0
+2024-01-16 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-25 00:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-26 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-27 00:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-28 00:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-01-29 00:00:00,True,0 days 22:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-02 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-03 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-13 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-14 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-17 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-18 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-23 00:00:00,False,4 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,0.0
+2024-02-28 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-02-29 00:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-02 00:00:00,True,0 days 07:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2024-03-03 00:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-05 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-06 00:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-07 00:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-10 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-11 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,25.0
+2024-03-21 00:00:00,False,2 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,0.0
+2024-03-23 00:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-24 00:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-28 00:00:00,True,0 days 06:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2024-03-29 00:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-03-30 00:00:00,True,0 days 14:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2024-03-31 00:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,5.0
+2024-04-02 07:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-03 07:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-04 07:00:00,False,1 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,42.0
+2024-04-05 07:00:00,False,2 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,30.0
+2024-04-06 07:00:00,False,3 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,17.0
+2024-04-07 07:00:00,False,4 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,9.0
+2024-04-12 07:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-13 07:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-15 07:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-18 07:00:00,False,1 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,0.0
+2024-04-20 07:00:00,True,0 days 00:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-04-21 07:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-06 07:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-08 13:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-10 07:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-11 07:00:00,True,1 days 00:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-12 13:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-15 07:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-16 07:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-23 13:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-27 13:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-05-28 07:00:00,False,1 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,22.0
+2024-05-30 09:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-06-06 07:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-06-07 07:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-06-15 07:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-06-23 07:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-06-27 07:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-01 07:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-05 07:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-06 07:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-07 07:00:00,False,1 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,3.0
+2024-07-11 07:00:00,False,1 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,0.0
+2024-07-13 07:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-14 07:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-15 07:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2024-07-17 07:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-18 07:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-07-23 07:00:00,True,0 days 10:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2024-08-01 03:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-03 03:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-04 03:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-05 03:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-07 03:00:00,True,0 days 12:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2024-08-09 03:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-10 03:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-18 03:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-19 03:00:00,True,0 days 07:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2024-08-29 03:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-30 03:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-08-31 03:00:00,False,1 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,6.0
+2024-09-08 03:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-09-26 09:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-09-27 05:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-09-28 03:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-09-29 03:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-09-30 05:00:00,False,1 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,17.0
+2024-11-11 02:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2024-11-21 02:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-11-23 02:00:00,False,2 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,33.0
+2024-11-24 02:00:00,False,2 days 06:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,18.0
+2024-11-26 08:00:00,True,0 days 00:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-11-28 02:00:00,True,0 days 03:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,
+2024-11-30 02:00:00,False,1 days 21:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,7.0
+2024-12-05 02:00:00,True,0 days 02:00:00,Weather Conditions - Rain Conditions,2 Hours - Ongoing,2.0,
+2024-12-10 02:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-12-11 02:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-12-12 02:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-12-16 02:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-12-19 02:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2024-12-28 02:00:00,True,0 days 00:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2024-12-29 02:00:00,True,1 days 00:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2024-12-30 02:00:00,True,0 days 00:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-01-01 02:00:00,True,0 days 05:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-02-06 08:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-02-09 02:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2025-02-12 02:00:00,True,0 days 05:00:00,Weather Conditions - Rain/snow condition,2 Hours - Ongoing,2.0,
+2025-02-13 02:00:00,False,1 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,18.0
+2025-02-16 02:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-02-17 02:00:00,False,1 days 11:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,35.0
+2025-03-06 02:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-03-17 03:00:00,True,0 days 05:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-03-21 03:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-03-24 03:00:00,True,0 days 01:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-01 07:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-04 07:00:00,True,0 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-06 07:00:00,True,0 days 19:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,
+2025-04-07 13:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-11 13:00:00,True,0 days 08:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-04-12 07:00:00,False,1 days 02:00:00,Weather Conditions - Rain condition,2 Hrs Hours - Ongoing,2.0,39.0
+2025-04-13 07:00:00,False,1 days 18:00:00,Weather Conditions - Rain Condition.,2 Hours - Ongoing,2.0,31.0
+2025-04-14 13:00:00,True,0 days 12:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-15 07:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-04-26 07:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-04-27 07:00:00,False,1 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,12.0
+2025-05-05 07:00:00,True,0 days 04:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-06 07:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-09 13:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-05-10 07:00:00,False,1 days 05:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,16.0
+2025-05-14 07:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-15 07:00:00,False,1 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,32.0
+2025-05-16 07:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,
+2025-05-17 07:00:00,True,0 days 18:00:00,Weather Conditions - Rain Condition,2 hours Hours - Ongoing,2.0,
+2025-05-22 07:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ended,2.0,
+2025-05-24 11:00:00,True,0 days 18:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-25 11:00:00,False,1 days 18:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,1.0
+2025-05-29 11:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-30 11:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-05-31 11:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-01 11:00:00,False,1 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,4.0
+2025-06-07 17:00:00,True,0 days 06:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-08 11:00:00,True,1 days 00:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-09 11:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-10 17:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-11 11:00:00,False,1 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,5.0
+2025-06-14 17:00:00,True,0 days 11:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-15 11:00:00,True,0 days 01:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-16 11:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-17 11:00:00,True,0 days 13:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-18 11:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-19 11:00:00,True,0 days 03:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-20 11:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-06-22 17:00:00,True,0 days 08:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-06-23 11:00:00,False,1 days 02:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,1.0
+2025-06-27 11:00:00,False,3 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,0.0
+2025-06-28 12:40:00,False,2 days 12:20:00,Pipe Break - Force Main Break,2 Hours - Ongoing,2.0,0.0
+2025-07-01 11:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-07-02 11:00:00,False,1 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,13.0
+2025-07-09 11:00:00,True,0 days 13:00:00,Weather Conditions - Rain conditions,2 Hours - Ongoing,2.0,
+2025-07-10 11:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-07-11 17:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-07-14 11:00:00,True,0 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-07-15 11:00:00,True,0 days 18:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-07-15 11:00:00,True,0 days 18:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-07-26 11:00:00,True,0 days 19:00:00,Weather Conditions - Rain Condition,2 hours Hours - Ongoing,2.0,
+2025-07-31 11:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition.,2 Hours - Ongoing,2.0,
+2025-08-01 11:00:00,True,0 days 21:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-08-02 11:00:00,False,1 days 21:00:00,Weather Conditions - Rain Condition,2 hours Hours - Ongoing,2.0,11.0
+2025-08-14 11:00:00,True,0 days 17:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-08-18 11:00:00,True,0 days 16:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-08-21 11:00:00,False,1 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,31.0
+2025-09-05 11:00:00,True,0 days 15:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-09-06 11:00:00,True,0 days 04:00:00,Weather Conditions - Rain Condition,2 Hours - Ongoing,2.0,
+2025-09-07 11:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-09-10 17:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-09-18 11:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-09-21 11:00:00,True,0 days 07:00:00,Weather Conditions - rain condition,2hr Hours - Ended,2.0,
+2025-09-23 11:00:00,False,1 days 06:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,1.0
+2025-09-25 11:00:00,True,0 days 14:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-09-28 11:00:00,True,0 days 13:00:00,Weather Conditions - rain conditions,2 hrs Hours - Ongoing,2.0,
+2025-10-08 11:00:00,True,0 days 08:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-11 17:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-12 11:00:00,True,0 days 03:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-13 11:00:00,True,0 days 21:00:00,Weather Conditions - rain condition,2 hours Hours - Ongoing,2.0,
+2025-10-14 11:00:00,True,0 days 23:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-15 17:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-20 11:00:00,True,0 days 07:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-22 11:00:00,True,0 days 11:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-30 11:00:00,True,0 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-10-31 11:00:00,False,1 days 10:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,33.0
+2025-11-01 11:00:00,False,2 days 10:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,18.0
+2025-11-10 12:00:00,True,0 days 22:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-11-11 12:00:00,False,1 days 22:00:00,Weather Conditions - Rain condition,2 hrs Hours - Ongoing,2.0,2.0
+2025-11-16 12:00:00,False,2 days 15:00:00,Weather Conditions - rain condition,2 Hours - Ongoing,2.0,0.0
+2025-11-19 12:00:00,True,0 days 09:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-11-22 12:00:00,True,0 days 07:00:00,Weather Conditions - RAIN CONDITIONS,2 Hours - Ongoing,2.0,
+2025-11-23 12:00:00,False,1 days 07:00:00,Weather Conditions - RAIN CONDITION,2 Hours - Ongoing,2.0,1.0
+2025-11-26 12:00:00,True,0 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,
+2025-11-27 12:00:00,False,1 days 20:00:00,Weather Conditions - Rain condition,2 Hours - Ongoing,2.0,4.0
