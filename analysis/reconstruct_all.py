@@ -6,10 +6,13 @@ Creek method:
   QC (automatic, per gauge, cross-validated against the other 13):
     - spike glitches: hours > 3.2 in while other gauges are dry -> zeroed
     - dead windows: 30-day sum ~0 while others catch > 2 in -> masked
-  Events: rainy hours separated by < 6 dry hours; events adjacent to
-    masked periods are excluded.
+  Events: rainy hours separated by <= 6 dry hours (a gap must be MORE
+    than 6h to split events; validated against live DEP polls 2026-07);
+    events adjacent to masked periods are excluded.
   Advisory: event depth >= waterbody threshold (and peak >= 0.05 in/hr)
-    -> advisory until [last rainy hour] + a * depth^b; overlaps merged.
+    -> advisory until [last rainy hour] + ceil(a * depth^b) hours
+    (ceiling, not rounding — validated exact vs. live DEP durations);
+    overlaps merged.
   Stats are normalized by each gauge's reliable hours.
 
 Usage:  python analysis/reconstruct_all.py
@@ -56,7 +59,7 @@ def qc(panel):
 def events_for(s):
     nan_times = s.index[s.isna()]
     r = s[s > 0]
-    eid = (r.index.to_series().diff() >= pd.Timedelta(hours=GAP)).cumsum()
+    eid = (r.index.to_series().diff() > pd.Timedelta(hours=GAP)).cumsum()
     ev = r.groupby(eid).agg(start=lambda x: x.index.min(),
                             end=lambda x: x.index.max(),
                             depth="sum", peak="max").reset_index(drop=True)
@@ -79,7 +82,7 @@ def main():
         ev = gauge_events[w.sensor_id]
         trig = ev[(ev.depth >= w.wq_threshold_in) & (ev.peak >= 0.05)].copy()
         trig["until"] = trig.end + pd.to_timedelta(
-            (w.wq_coeff_a * trig.depth ** w.wq_coeff_b).round(), unit="h")
+            np.ceil(w.wq_coeff_a * trig.depth ** w.wq_coeff_b), unit="h")
         merged = []
         for s, e in sorted(zip(trig.start, trig.until)):
             if merged and s <= merged[-1][1]:
