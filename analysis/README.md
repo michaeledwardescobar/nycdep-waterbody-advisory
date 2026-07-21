@@ -64,16 +64,16 @@ Each of the 45 entries describes one waterbody. In plain terms:
   (e.g., Newtown Creek, Coney Island).
 - **A_Curve … F_Curve** — six numbers that were plugged into the old system's
   formula for **Combined Sewer Overflow (CSO) advisories**. These are the
-  model's tuning knobs, set individually per waterbody. *An honest caveat:*
-  we know these six numbers are the formula's inputs, but the exact equation
-  the old system combined them with has not been recovered — it likely
+  model's tuning knobs, set individually per waterbody. 
+  We know these six numbers are the formula's inputs, but the exact equation
+  the old system combined them with has not been recovered. It may have
   predicted overflow volume and duration from storm size, but we cannot state
   the recipe, only the ingredients. Waterbodies showing all zeros (13 of them)
   had no CSO curve set at all.
 - **Rainfall_T** — the trigger: how much rain (in inches) a storm needs before
   a CSO advisory starts. It was 0.1 inches for every waterbody.
-- **peak_inten** — a second trigger based on how *hard* it rained in the worst
-  single hour (inches per hour), filtering out long drizzles that never
+- **peak_inten** — a second trigger based on the single hour of peak rainfall intensity 
+  (inches per hour), filtering out long drizzles that never
   overwhelm the sewers.
 - **manual_ove** — a manual override switch. Its presence proves DEP staff
   *could* force an advisory on or off by hand; it was set to 0 (off) for all
@@ -82,11 +82,10 @@ Each of the 45 entries describes one waterbody. In plain terms:
   the old system updated this table.
 - **Hours** — how many advisory hours remained at that last update.
 - **Expires** — when that advisory was due to end. Stored as a computer
-  timestamp (milliseconds since Jan 1, 1970). The strange value
+  timestamp (milliseconds since Jan 1, 1970). The value
   -62135596800000 is the system's way of writing "no advisory".
 - **Creation_1 / Creator_1** — when each row was created and by whom: all 45
-  on April 4, 2019, by a DEP staff account. This dates the 45-waterbody
-  system to spring 2019.
+  on April 4, 2019, by a DEP staff account. 
 - **EditDate_1 / Editor_1** — an authorship stamp from April 2019. Note it did
   *not* update when the live advisory columns changed (Expires shows June 2026
   while EditDate_1 still shows 2019), so it records when the rows were
@@ -94,20 +93,14 @@ Each of the 45 entries describes one waterbody. In plain terms:
 
 ## Why this snapshot matters
 
-- **It's a fossil.** The table's final entries record advisories from a
-  June 25–26, 2026 rain event that were never cleared — the old system was
-  switched off mid-advisory around June 26, 2026, and nothing has written to
-  the table since. The July 18, 2026 storm left no trace here.
 - **It preserves the 2019 calibration.** The curve numbers here differ from
   what DEP's live system served in July 2026 for 32 of 45 waterbodies (every
   waterbody with real, nonzero curves, plus Spring Creek, which gained curves).
   The formulas kept the same shape; the numbers were re-tuned — which is what
   you'd expect as DEP gathers better data and as sewer upgrades under the
-  Long-Term Control Plans change how the system behaves.
-- **It may be the only surviving copy.** The layer is orphaned and could be
-  deleted by DEP at any time. This repository's monthly parameter snapshots
-  now track the *current* numbers going forward; this file anchors the
-  historical end.
+  Long-Term Control Plans change how the system behaves. The table's final entries
+  record advisories from a rain event on June 25-26, 2026 and the old system was
+  switched off mid-advisory. 
 
 Because the parameters have provably changed over time, the reconstructed
 advisory history in this repository should be read as *the advisory record as
