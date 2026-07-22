@@ -1,39 +1,39 @@
 waterbody,gauge,threshold_in,episodes_per_yr,adv_hours_per_yr,pct_time,median_dur_hr
-Coney Island Creek,CI,0.05,42.0,3484,39.7,73
-"Hutchinson River, Lower",HP,0.05,50.0,3122,35.6,52
-"Bronx River, Lower",HP,0.05,50.7,3071,35.0,54
-Flushing Creek,TI,0.05,47.8,2961,33.8,50
-"Newtown Creek, Upper",NC,0.23,40.7,2663,30.4,56
-"Fresh Kills, Upper",PR,0.15,47.9,2169,24.7,36
-Alley Creek,TI,0.05,54.7,2163,24.7,33
-Bergen Basin,JA,0.05,55.1,1982,22.6,30
-Fresh Creek,26,0.05,57.2,1924,21.9,30
-Flushing Bay,BB,0.19,45.9,1883,21.5,35
-Thurston Basin,JA,0.05,56.2,1884,21.5,27
-"Newtown Creek, Lower",NC,0.3,39.2,1799,20.5,39
-"Arthur Kill, Upper",OB,0.1,57.5,1621,18.5,23
-Westchester Creek,HP,0.19,49.4,1536,17.5,24
-Gravesend Bay,OH,0.1,54.8,1524,17.4,23
-"Gowanus Canal, Outer",RH,0.46,30.5,1505,17.2,42
-Hendrix Creek,26,0.09,56.9,1490,17.0,22
-"Fresh Kills, Lower",PR,0.16,51.9,1425,16.3,20
-"Gowanus Canal, Inner",RH,0.23,46.5,1245,14.2,21
+Coney Island Creek,CI,0.05,41.9,3482,39.7,73
+"Hutchinson River, Lower",HP,0.05,49.9,3126,35.7,52
+"Bronx River, Lower",HP,0.05,50.8,3075,35.1,54
+Flushing Creek,TI,0.05,47.8,2966,33.8,50
+"Newtown Creek, Upper",NC,0.23,40.6,2662,30.4,56
+"Fresh Kills, Upper",PR,0.15,47.9,2168,24.7,36
+Alley Creek,TI,0.05,54.8,2166,24.7,33
+Bergen Basin,JA,0.05,55.1,1981,22.6,30
+Fresh Creek,26,0.05,57.2,1923,21.9,30
+Flushing Bay,BB,0.19,46.0,1885,21.5,35
+Thurston Basin,JA,0.05,56.1,1883,21.5,27
+"Newtown Creek, Lower",NC,0.3,39.1,1798,20.5,39
+"Arthur Kill, Upper",OB,0.1,57.5,1620,18.5,23
+Westchester Creek,HP,0.19,49.5,1537,17.5,24
+Gravesend Bay,OH,0.1,54.7,1523,17.4,23
+"Gowanus Canal, Outer",RH,0.46,30.5,1504,17.2,42
+Hendrix Creek,26,0.09,56.8,1489,17.0,22
+"Fresh Kills, Lower",PR,0.16,51.9,1424,16.2,20
+"Gowanus Canal, Inner",RH,0.23,46.4,1244,14.2,21
 Erie Basin,RH,0.27,44.1,1174,13.4,21
 Harlem River,WI,0.5,29.5,1032,11.8,31
-Sheepshead Bay,CI,0.18,47.8,1001,11.4,17
-Bowery Bay,BB,0.29,41.2,988,11.3,20
-Newark Bay,PR,0.39,33.9,951,10.8,22
-East River (near Steinway Creek),BB,0.54,26.0,886,10.1,31
-Shellbank Basin,JA,0.34,36.2,873,10.0,20
+Sheepshead Bay,CI,0.18,47.7,1000,11.4,17
+Bowery Bay,BB,0.29,41.3,989,11.3,20
+Newark Bay,PR,0.39,33.9,950,10.8,22
+East River (near Steinway Creek),BB,0.54,26.1,888,10.1,31
+Shellbank Basin,JA,0.34,36.1,872,10.0,20
 Upper New York Bay,OH,0.34,35.4,870,9.9,21
 Kill Van Kull,PR,0.44,31.4,865,9.9,22
 Hudson River (Manhattan),NR,0.41,33.8,794,9.1,20
-Paerdegat Basin,CI,0.38,31.8,798,9.1,20
+Paerdegat Basin,CI,0.38,31.8,797,9.1,20
 Gerritsen Creek,RK,0.4,30.8,763,8.7,19
-Little Neck Bay,TI,0.46,30.6,739,8.4,21
+Little Neck Bay,TI,0.46,30.7,740,8.4,20
 Spring Creek,26,0.64,22.6,726,8.3,29
 "East River, Lower",NC,0.8,22.2,625,7.1,26
-East River (RFK to Whitestone),TI,0.61,24.4,588,6.7,22
+East River (RFK to Whitestone),TI,0.61,24.5,589,6.7,22
 "Arthur Kill, Lower",OB,0.7,20.5,549,6.3,23
 Hudson River (Bronx),WI,0.62,25.5,542,6.2,19
 Jamaica Bay (Queens),JA,0.74,18.5,431,4.9,21
