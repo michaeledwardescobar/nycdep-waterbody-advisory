@@ -1,0 +1,3 @@
+run_time_utc,n_observations,n_waterbodies,quadratic_depth_peak_r2,quadratic_depth_peak_rmse,poly5_depth_r2,poly5_depth_rmse
+2026-07-23T04:11:42Z,229,31,0.8902,18.8284,0.5938,36.2077
+2026-07-23T04:11:45Z,229,31,0.8902,18.8284,0.5938,36.2077
