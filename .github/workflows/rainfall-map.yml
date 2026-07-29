@@ -44,7 +44,7 @@ jobs:
       - name: Build map
         run: |
           mkdir -p site
-          python tools/rainfall_map.py \
+          python analysis/rainfall_map.py \
             --input data/rain_gauges.csv \
             --out site/index.html
           ls -la site/
