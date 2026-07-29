@@ -17,7 +17,7 @@ on:
   push:
     paths:
       - "data/rain_gauges.csv"      # <-- point this at your gauge file
-      - "tools/rainfall_map.py"
+      - "analysis/rainfall_map.py"
 
 permissions:
   contents: read
