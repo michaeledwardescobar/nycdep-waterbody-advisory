@@ -1,0 +1,70 @@
+# .github/workflows/rainfall-map.yml
+#
+# Rebuilds the rainfall map whenever gauge data changes, on a daily schedule, and on
+# demand. "Run workflow" is a button in the GitHub mobile app, so you can trigger a
+# rebuild from your phone and open the result a minute later.
+#
+# Publishes to GitHub Pages. Pages on a private repo needs GitHub Pro or Team — if the
+# repo is private and you're on the free plan, delete the `deploy` job and use the
+# artifact from the `build` job instead.
+
+name: Rainfall map
+
+on:
+  schedule:
+    - cron: "20 11 * * *"          # 11:20 UTC daily — after the overnight gauge pull
+  workflow_dispatch:                # the "Run workflow" button
+  push:
+    paths:
+      - "data/rain_gauges.csv"      # <-- point this at your gauge file
+      - "tools/rainfall_map.py"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: rainfall-map
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install pandas numpy
+
+      - name: Build map
+        run: |
+          mkdir -p site
+          python tools/rainfall_map.py \
+            --input data/rain_gauges.csv \
+            --out site/index.html
+          ls -la site/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rainfall-map
+          path: site/index.html
+          retention-days: 30
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
