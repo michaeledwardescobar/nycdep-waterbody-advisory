@@ -45,6 +45,8 @@ jobs:
           mkdir -p site
           python analysis/rainfall_map.py \
             --input data/rain_history \
+            --max-rate 6.0 \
+            --corroboration 0.05 \
             --out site/index.html
           ls -la site/
 
