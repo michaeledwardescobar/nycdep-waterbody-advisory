@@ -8,11 +8,14 @@ Creek method:
     - dead windows: 30-day sum ~0 while others catch > 2 in -> masked
   Events: rainy hours separated by <= 6 dry hours (a gap must be MORE
     than 6h to split events; validated against live DEP polls 2026-07);
-    events adjacent to masked periods are excluded.
+    events adjacent to masked periods are excluded. 
   Advisory: event depth >= waterbody threshold (and peak >= 0.05 in/hr)
     -> advisory until [last rainy hour] + ceil(a * depth^b) hours
     (ceiling, not rounding — validated exact vs. live DEP durations);
     overlaps merged.
+    -> tolerance absorbs float32 serialization noise in DEP's rainfall API 
+    (readings arrive as e.g. 0.0400000028 for 0.04); measured worst-case 
+    drift 9.2e-07 over 2018–2026.
   Stats are normalized by each gauge's reliable hours.
 
 Usage:  python analysis/reconstruct_all.py
@@ -80,7 +83,7 @@ def main():
     rows, episodes = [], []
     for _, w in wb.iterrows():
         ev = gauge_events[w.sensor_id]
-        trig = ev[(ev.depth >= w.wq_threshold_in) & (ev.peak >= 0.05)].copy()
+        trig = ev[(ev.depth >= w.wq_threshold_in - 1e-4) & (ev.peak >= 0.05)].copy()
         trig["until"] = trig.end + pd.to_timedelta(
             np.ceil(w.wq_coeff_a * trig.depth ** w.wq_coeff_b), unit="h")
         merged = []
