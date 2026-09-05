@@ -176,7 +176,7 @@ def harvest_sensor(sensor_id, meta):
         for d in data:
             k = rec_key(d)
             if k not in merged:
-                merged[k] = {"id": k, "sensor_id": d.get("sensorId"),
+                merged[k] = {"id": k, "sensor_id": d.get("sensorId") or sensor_id,
                              "occurred_on": d.get("occurredOn"),
                              "precip_in": d.get("precipitation")}
                 fresh += 1
