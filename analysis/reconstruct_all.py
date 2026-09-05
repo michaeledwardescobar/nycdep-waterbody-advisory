@@ -18,6 +18,10 @@ Creek method:
     drift 9.2e-07 over 2018–2026.
   Stats are normalized by each gauge's reliable hours.
 
+  Sept 5, 2026: Modified occurred_on. It labels the start of each 
+  accumulation hour, but DEP starts the advisory countdown when the hour 
+  closes.
+
 Usage:  python analysis/reconstruct_all.py
 Writes: analysis/waterbody_summary.csv, analysis/all_waterbody_episodes.csv
 """
@@ -66,6 +70,8 @@ def events_for(s):
     ev = r.groupby(eid).agg(start=lambda x: x.index.min(),
                             end=lambda x: x.index.max(),
                             depth="sum", peak="max").reset_index(drop=True)
+    ev["start"] += pd.Timedelta(hours=1)
+    ev["end"] += pd.Timedelta(hours=1)
     if len(nan_times):
         bad = ev.apply(lambda e: (
             (nan_times >= e.start - pd.Timedelta(hours=GAP)) &
