@@ -1273,3 +1273,17 @@ poll_time_utc,sensor_id,sensor_name,rain_24h_in,active
 2026-11-26T21:52:08Z,RK,Rockaway,0.23,True
 2026-11-26T21:52:08Z,TI,Tallman Island,0.14,True
 2026-11-26T21:52:08Z,WI,Wards Island,0.19,True
+2026-11-27T04:06:26Z,26,26th Ward Plant,0.16,True
+2026-11-27T04:06:26Z,BB,Bowery Bay,0.05,True
+2026-11-27T04:06:26Z,CI,Coney Island,0.12,True
+2026-11-27T04:06:26Z,HP,Hunts Point,0.13,True
+2026-11-27T04:06:26Z,JA,Jamaica,0.09,True
+2026-11-27T04:06:26Z,NC,Newtown Creek,0.2,True
+2026-11-27T04:06:26Z,NR,North River,0.13,True
+2026-11-27T04:06:26Z,OB,Oakwood Beach,0.06,True
+2026-11-27T04:06:26Z,OH,Owls Head,0.1,True
+2026-11-27T04:06:26Z,PR,Port Richmond,0.1,True
+2026-11-27T04:06:26Z,RH,Red Hook,0.0,True
+2026-11-27T04:06:26Z,RK,Rockaway,0.25,True
+2026-11-27T04:06:26Z,TI,Tallman Island,0.06,True
+2026-11-27T04:06:26Z,WI,Wards Island,0.21,True
